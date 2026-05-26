@@ -1,0 +1,22 @@
+{
+  "name": "mid-tern-web95",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --dns-result-order=ipv4first --watch index.js",
+    "migrate:teachers:legacy": "node scripts/migrate-teacher-legacy.js",
+    "migrate:teachers:legacy:dry": "node scripts/migrate-teacher-legacy.js --dry-run",
+    "migrate:teacher-positions:legacy": "node scripts/migrate-teacher-position-legacy.js",
+    "migrate:teacher-positions:legacy:dry": "node scripts/migrate-teacher-position-legacy.js --dry-run"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2"
+  }
+}
